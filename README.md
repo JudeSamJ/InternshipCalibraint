@@ -1,1 +1,1 @@
-### This is the record for my internship at calibraint technologies
+This is the record for my internship at calibraint technologies

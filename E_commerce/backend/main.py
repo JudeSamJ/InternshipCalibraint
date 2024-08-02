@@ -6,7 +6,7 @@ from passlib.hash import bcrypt
 import models , os ,random,smtplib
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm
-from fastapi_mail import FastMail , MessageSchema,ConnectionConfig
+from fastapi_mail import FastMail , MessageSchema
 from dotenv import load_dotenv
 from fastapi_mail import FastMail,MessageSchema
 from fastapi_mail.errors import ConnectionErrors
@@ -16,7 +16,6 @@ from sqlalchemy.orm import Session
 from uuid import uuid4
 from utils import create_access_token,create_refresh_token,cardno_token
 from authentication import get_current_user
-from OpenSSL import SSL
 from itsdangerous import URLSafeTimedSerializer
 import smtplib
 from email.message import EmailMessage
